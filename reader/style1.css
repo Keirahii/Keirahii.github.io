@@ -1,15 +1,19 @@
 body {
-     background-color:cadetblue;
+     background-color:rgb(19, 166, 51);
      font-family:Arial;
 } 
 
 @font-face {
     font-family: 'hi';
-     src: url('stone orgonite.woff') format('opentype');
+     src: url('BitfalsFont.woff') format('opentype');
 }
 
 h1 {
     font-family:"hi";
-    font-size: 100px;
+    font-size: 40px;
     letter-spacing: 30px;
+    margin-left: 70px;
+
+
+
 }
