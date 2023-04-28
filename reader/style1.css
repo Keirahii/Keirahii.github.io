@@ -12,13 +12,13 @@ h1 {
     font-family:"hi";
     color: #3f9242;
     font-size:95px;
-    line-height:145px;
+    line-height:135px;
     margin-left:5%;
     margin-right:5%;
 
     letter-spacing: -15px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 @font-face {
@@ -91,15 +91,16 @@ p {
       top: -35px;
       border: none;
       border-top: 10px solid black;
-      margin-bottom: 200px;
+      margin-bottom: 250px;
       width: 46%;
       right: 0;
     }
     
   .kei p {
     font-family:"nghieng";
-    font-size: 80px;
+    font-size:60px;
     margin-top: -70px;
+    margin-bottom:70px;
 			
   }
 
