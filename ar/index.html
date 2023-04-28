@@ -41,36 +41,220 @@
       https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
      -->
 
-     <!-- !!! MARKER 1 !!! -->
+     <!-- !!! Only 1 Marker but lots of assets inside it !!! -->
+
+      <a-marker type='pattern' url='pattern-1.patt' smooth="true">
+
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+        <a-box
+        width="3"
+        height="1.5"
+        depth="0.2"
+        position="2 0.2 0" 
+        rotation="65 10 0"               
+        src="Daylight-Box_Right.jpg"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="1.5"
+        height="3"
+        depth="0.2"
+        position="-2 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="3"
+        height="1.5"
+        depth="2"
+        position="1.5 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>        
+
+
+        <a-sphere
+        radius="1.2"
+        position= "2 0 2"
+        src="sky.png"
+        env-map="#env"
+        metalness="0.9"
+        roughness="0.1"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 360 0; 
+        easing: linear; 
+        dur: 10000; 
+        loop:true"
+        >                  
+        </a-sphere>        
+
+        <!-- !!! Do not remove Marker 1 !!! -->
+      </a-marker>    
 
       <a-marker type='pattern' url='pattern-marker4562.patt' smooth="true">
 
         <!-- This is the object <a-object> 
           Edit size, position, texture and animation here -->
 
+        <a-box
+        width="3"
+        height="1.5"
+        depth="0.2"
+        position="2 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="1.5"
+        height="3"
+        depth="0.2"
+        position="-2 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="3"
+        height="1.5"
+        depth="2"
+        position="1.5 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>        
+
+
         <a-sphere
-        radius="0.8"
-        position= "0 0.5 0"
-        src="sky.jpeg"
+        radius="1.2"
+        position= "2 0 2"
+        src="sky.png"
         env-map="#env"
         metalness="0.9"
         roughness="0.1"                  
         animation="
-         property: rotation; 
-         from: 0 0 0; 
-         to: 0 360 0; 
-         easing: linear; 
-         dur: 10000; 
-         loop:true"
-          >                  
-        </a-sphere>
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 360 0; 
+        easing: linear; 
+        dur: 10000; 
+        loop:true"
+        >                  
+        </a-sphere>        
 
-        <!-- !!! END MARKER 1 !!! -->
-      </a-marker>
-      
-      
+        <!-- !!! Do not remove Marker 1 !!! -->
+      </a-marker>  
 
-     
+      <a-marker type='pattern' url='pattern-marker4562.patt' smooth="true">
+
+        <!-- This is the object <a-object> 
+          Edit size, position, texture and animation here -->
+
+        <a-box
+        width="3"
+        height="1.5"
+        depth="0.2"
+        position="2 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="1.5"
+        height="3"
+        depth="0.2"
+        position="-2 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>
+
+        <a-box
+        width="3"
+        height="1.5"
+        depth="2"
+        position="1.5 0.2 0" 
+        rotation="65 10 0"               
+        src="sky.png"
+        transparent="true"
+        alphaTest= "0.5"            
+        env-map="#env"
+        metalness="1.0"
+        roughness="0.0"          
+        >
+        </a-box>        
+
+
+        <a-sphere
+        radius="1.2"
+        position= "2 0 2"
+        src="sky.png"
+        env-map="#env"
+        metalness="0.9"
+        roughness="0.1"                  
+        animation="
+        property: rotation; 
+        from: 0 0 0; 
+        to: 0 360 0; 
+        easing: linear; 
+        dur: 10000; 
+        loop:true"
+        >                  
+        </a-sphere>        
+
+        <!-- !!! Do not remove Marker 1 !!! -->
+      </a-marker>  
 
 
       <a-entity camera></a-entity>

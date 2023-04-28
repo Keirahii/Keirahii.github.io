@@ -1,19 +1,136 @@
 body {
-     background-color:rgb(19, 166, 51);
+     background-color:#fff;
      font-family:Arial;
 } 
 
 @font-face {
     font-family: 'hi';
-     src: url('BitfalsFont.woff') format('opentype');
+     src: url('Perfect-Regular.woff') format('opentype');
 }
 
 h1 {
     font-family:"hi";
-    font-size: 40px;
-    letter-spacing: 30px;
-    margin-left: 70px;
-
-
-
+    color: #3f9242;
+    font-size: 130px;
+    line-height:145px ;
+    letter-spacing: -5px;
+    text-align: center;
+    margin-top: 70px;
 }
+
+@font-face {
+  font-family: "MyFont";
+  src: url("andale-mono.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ki";
+  src: url("Roboto-Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "nghieng";
+  src: url("PEN.woff") format("woff");
+}
+
+
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 80px;
+
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 10px;
+    color: #3f9242;
+    text-shadow: 1.5px 1px 0px #ffffff;
+		text-align: center;
+		}
+
+
+
+    .myclass p {
+      text-align: left;
+      font-size: 16px; 
+      margin-left: 300px;
+      margin-right: 30px;
+      margin-top:-120px ;
+      margin-bottom: 40px;
+      font-family:"MyFont" ;
+    }
+
+
+    .dym p {
+      text-align:left;
+      font-size: 16px; 
+        position: absolute;
+        left:-95px ;
+        top: 180px;
+      font-family:"MyFont" ;
+      transform: rotate(90deg)
+    }
+
+
+    .container {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    
+    .line {
+      position: absolute;
+      top: -35px;
+      border: none;
+      border-top: 10px solid black;
+      margin-bottom: 200px;
+      width: 46%;
+      right: 0;
+    }
+    
+  .kei p {
+    font-family:"nghieng";
+    font-size: 80px;
+    margin-top: -70px;
+			
+  }
+
+  .colored-area {
+    background-color: #3f9242 ;
+    width: 100px;
+    height: 50px;
+    margin-top:70px ;
+  }
+
+  .after {
+    margin-top:-70px
+}
+
+.containe {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.lin {
+  position: left;
+  top: -35px;
+  border: none;
+  border-top: 10px solid black;
+  margin-left: 1.5%;
+  margin-top: -80px;
+  margin-bottom: 100px;
+  width: 46%;
+  right: 100;
+}
+
+.apr {
+
+  margin-top: -90px;
+  margin-bottom: 100px;
+}
+
+
