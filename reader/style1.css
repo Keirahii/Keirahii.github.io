@@ -11,11 +11,14 @@ body {
 h1 {
     font-family:"hi";
     color: #3f9242;
-    font-size: 110px;
-    line-height:145px ;
-    letter-spacing: -5px;
+    font-size:95px;
+    line-height:145px;
+    margin-left:5%;
+    margin-right:5%;
+
+    letter-spacing: -15px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 @font-face {
@@ -47,7 +50,7 @@ p {
   h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     color: #3f9242;
     text-shadow: 1.5px 1px 0px #ffffff;
 		text-align: center; 
@@ -59,7 +62,7 @@ p {
     .myclass p {
       text-align: left;
       font-size: 16px; 
-      margin-left: 260px;
+      margin-left: 230px;
       margin-right: 30px;
       margin-top:-120px ;
       margin-bottom: 40px;
