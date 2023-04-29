@@ -3,10 +3,15 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="aframe-ar.js"></script>
   <body>
-    <a-scene embedded arjs environment="#hi" vr-mode-ui="enabled: false">
+    <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
       <a-assets>
-        <a-cubemap id="hi">
-          <img src="white.jpg">
+        <a-cubemap id="env">
+          <img src="Daylight-Box_Right.jpg">
+          <img src="Daylight-Box_Left.jpg">
+          <img src="Daylight-Box_Top.jpg">
+          <img src="Daylight-Box_Bottom.jpg">
+          <img src="Daylight-Box_Front.jpg">
+          <img src="Daylight-Box_Back.jpg">
         </a-cubemap>
       </a-assets>
 
@@ -52,7 +57,7 @@
           src="green.jpg"
           transparent="true"
           alphaTest= "0.5"
-          env-map="#hi"
+          env-map="#env"
           metalness="0"
           roughness="0.0"           
           >                 
@@ -67,7 +72,7 @@
     src="green2.jpg"
     transparent="true"
     alphaTest= "0.5"
-    env-map="#hi"
+    env-map="#env"
     metalness="1.0"
     roughness="0.0"           
     >                 
@@ -82,7 +87,7 @@ rotation="-90  0 0"
 src="jurassic-world.png" 
 transparent="true"
 alphaTest= "0.5"
-env-map="#hi"
+env-map="#env"
 metalness="0"
 roughness="0.0"           
 >                 
@@ -100,7 +105,7 @@ rotation="-90  0 0"
 src="cac-goc-quay-co-ban.png" 
 transparent="true"
 alphaTest= "0.5"
-env-map="#hi"
+env-map="#env"
 metalness="0"
 roughness="0.0"           
 >                 
@@ -111,14 +116,18 @@ roughness="0.0"
 
       <a-marker type='pattern' url='pattern-1.patt' smooth="true">
 
-        <a-sphere
-        radius="1.5"
-        position="0 1.5 -4"
-        color="white"
-        src="c1.png"
-        animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"
-        animation__position="property: position; to: 0 2.5 0; loop: true; dir: alternate; dur: 2000">
-      </a-sphere>
+        <a-scene>
+          <a-sphere
+            radius="1.5"
+            position="0 1.5 -4"
+            color="white"
+          src="#texture"
+            animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"
+            animation__position="property: position; to: 0 2.5 -4; loop: true; dir: alternate; dur: 2000">
+          </a-sphere>
+          <a-light type="point" intensity="1" position="0 3 -4"></a-light>
+        </a-scene>   
+  </a-sphere>
 
   </a-marker>  
 
