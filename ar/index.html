@@ -3,15 +3,10 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="aframe-ar.js"></script>
   <body>
-    <a-scene embedded arjs environment="#env" vr-mode-ui="enabled: false">
+    <a-scene embedded arjs environment="#hi" vr-mode-ui="enabled: false">
       <a-assets>
-        <a-cubemap id="env">
-          <img src="Daylight-Box_Right.jpg">
-          <img src="Daylight-Box_Left.jpg">
-          <img src="Daylight-Box_Top.jpg">
-          <img src="Daylight-Box_Bottom.jpg">
-          <img src="Daylight-Box_Front.jpg">
-          <img src="Daylight-Box_Back.jpg">
+        <a-cubemap id="hi">
+          <img src="white.jpg">
         </a-cubemap>
       </a-assets>
 
@@ -57,7 +52,7 @@
           src="green.jpg"
           transparent="true"
           alphaTest= "0.5"
-          env-map="#env"
+          env-map="#hi"
           metalness="0"
           roughness="0.0"           
           >                 
@@ -72,7 +67,7 @@
     src="green2.jpg"
     transparent="true"
     alphaTest= "0.5"
-    env-map="#env"
+    env-map="#hi"
     metalness="1.0"
     roughness="0.0"           
     >                 
@@ -87,7 +82,7 @@ rotation="-90  0 0"
 src="jurassic-world.png" 
 transparent="true"
 alphaTest= "0.5"
-env-map="#env"
+env-map="#hi"
 metalness="0"
 roughness="0.0"           
 >                 
@@ -105,7 +100,7 @@ rotation="-90  0 0"
 src="cac-goc-quay-co-ban.png" 
 transparent="true"
 alphaTest= "0.5"
-env-map="#env"
+env-map="#hi"
 metalness="0"
 roughness="0.0"           
 >                 
@@ -124,7 +119,7 @@ roughness="0.0"
         src="c1.png"
         transparent="true"
         alphaTest= "0.5"
-        env-map="#env"
+        env-map="#hi"
         metalness="1.0"
         roughness="0.0"   
          animation__position="
