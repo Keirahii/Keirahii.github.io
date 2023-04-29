@@ -111,34 +111,14 @@ roughness="0.0"
 
       <a-marker type='pattern' url='pattern-1.patt' smooth="true">
 
-        <a-sphere 
-        height="1"
-        radius="1"
-        position="0 0.5 0" 
-        rotation="0 -45 0"               
+        <a-sphere
+        radius="1.5"
+        position="0 1.5 -4"
+        color="white"
         src="c1.png"
-        transparent="true"
-        alphaTest= "0.5"
-        env-map="#hi"
-        metalness="1.0"
-        roughness="0.0"   
-         animation__position="
-        property: position; 
-        from: 0 0 0; 
-        to: 0 1 0; 
-        dir: alternate;
-        easing: linear; 
-        dur: 5000; 
-        loop:true"
-        animation__rotate="
-        property: rotation; 
-        from: 0 0 0; 
-        to: 0 360 0; 
-        easing: linear; 
-        dur: 5000; 
-        loop:true"      
-        >                 
-  </a-sphere>
+        animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 5000"
+        animation__position="property: position; to: 0 2.5 0; loop: true; dir: alternate; dur: 2000">
+      </a-sphere>
 
   </a-marker>  
 
