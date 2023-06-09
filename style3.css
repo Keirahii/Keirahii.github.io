@@ -1,0 +1,211 @@
+body {
+background-color:black;
+z-index: 2;
+}
+
+@font-face {
+  font-family: "MyFont";
+  src: url("andale-mono.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ki";
+  src: url("Roboto-BoldItalic.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "nghieng";
+  src: url("PEN.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'hi';
+   src: url('Perfect-Regular.woff') format('opentype');
+}
+
+.gif-container {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+
+.gif {
+  width: 40%;
+  margin: 75px auto 0;
+  height: auto;
+  display: block;
+  z-index: 2;
+}
+
+.kei {
+  position: absolute;
+  top: 30vh;
+  left: 8%;
+  width: calc(100% - 8%);
+  font-family: "nghieng";
+  font-size: 40px;
+  color: green ;
+  z-index: 1;
+}
+
+
+.keir {
+  position: absolute;
+  top: 25vh;
+  left: 75%;
+  width: calc(100% - 69%);
+  font-family: "hi";
+  font-size: 40px;
+  color:green;
+  z-index: 1;
+}
+
+
+
+
+
+.marquee-container {
+  position: fixed;
+  top: 0;
+  width: 3%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left {
+  left: 0;
+  background-color: rgb(239, 239, 121);
+  border: 1px;
+}
+
+.right {
+  right: 0;
+  background-color: green;
+  border: 1px;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-top: 80%;
+  font-family: "hi";
+  margin-left: 17%;
+  letter-spacing: 15px;
+}
+
+.marquee-content p {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(60%);
+  }
+}
+
+.left .marquee-content {
+  animation: marquee-left 10s linear infinite;
+}
+
+.right .marquee-content {
+  animation: marquee-right 27s linear infinite;
+}
+
+
+.introduction {
+  color: greenyellow;
+  font-size: 60px;
+  margin-left: 23%;
+  margin-right: 20%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.highlight {
+  font-size: 120px;
+}
+
+.highlights {
+  font-size: 30px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid black;
+  position: relative;
+  animation: rotate 4s linear infinite;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  top: 70px; 
+}
+
+
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #ff0000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
